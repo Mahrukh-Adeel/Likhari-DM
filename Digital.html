@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#d3e7ff">
+    <meta name="keywords" content="cute, stationery, cheap, affordable" />
+    <meta name="author" content="ugly">
+    <link rel="shortcut icon" href="https://cdn3.iconfinder.com/data/icons/feather-5/24/pen-tool-256.png" type="image/png"><!-- Title and description ================================================== -->
+    <title>لکھاری&ndash; Stationers</title>
+    <meta name="description" content="We are a affordable Stationary store">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="top-label">
+    <div class="top-label-row">
+        <div class="col-2">
+            <div class="top-label-left">
+                
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="top-label-center">
+                <p style="margin:0rem">Get free shipping on orders above Rs.2000</p>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="top-label-right">
+                <a href="" style="text-decoration:none; color:rgba(var(--color-foreground),.75);"></a>
+            </div>
+        </div>
+    </div>
+</div>
+      
+      
+      <nav class="navbar">
+        <img src="https://cdn1.iconfinder.com/data/icons/prettyoffice9/256/pen.png" alt="Company Logo" class="logo">
+        <ul class="nav-links">
+          <li><a href="NewArrivals.html">New Arrivals</a></li>
+          <li><a href="Categories.html">Categories</a></li>
+          <li><a href="Vintage.html">Vintage</a></li>
+          <li><a href="popular.html">Popular</a></li>
+        </ul>
+        <ul class="left-logos">
+            <li class="logo" ><a href="Wishlist.html"><i class="fa-solid fa-heart"></i></a></i></li>
+            <li class="logo" ><a href="Login.html"><i class="fa-regular fa-user"></i></a></li>
+            <li class="logo" ><a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li class="logo" id="search"><i class="fa-solid fa-magnifying-glass"></i></li>
+          </ul>
+      </nav>
+      <header>
+        <div class="image-scroller">
+            <img src="https://images.pexels.com/photos/7054754/pexels-photo-7054754.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 1">
+            <img src="https://images.pexels.com/photos/5594273/pexels-photo-5594273.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 2">
+            <img src="https://images.pexels.com/photos/7054800/pexels-photo-7054800.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 3">
+          </div>
+          <button class="prev">&#10094;</button>  <button class="next">&#10095;</button>  <script>
+            // Get the image scroller element
+            const scroller = document.querySelector('.image-scroller');
+            // Get the images
+            const images = scroller.querySelectorAll('img');
+        
+            let currentImageIndex = 0;
+        
+            // Function to show the next image
+            function showNextImage() {
+              currentImageIndex++;
+              if (currentImageIndex >= images.length) {
+                currentImageIndex = 0; // Reset to first image
+              }
+              images.forEach((img, index) => img.classList.remove('active'));
+              images[currentImageIndex].classList.add('active');
+            }
+        
+            // Function to show the previous image
+            function showPreviousImage() {
+              currentImageIndex--;
+              if (currentImageIndex < 0) {
+                currentImageIndex = images.length - 1; // Go to last image
+              }
+              images.forEach((img, index) => img.classList.remove('active'));
+              images[currentImageIndex].classList.add('active');
+            }
+        
+            // Button click events
+            const prevButton = document.querySelector('.prev');
+            const nextButton = document.querySelector('.next');
+            prevButton.addEventListener('click', showPreviousImage);
+            nextButton.addEventListener('click', showNextImage);
+        
+            // Start the animation on page load
+            setInterval(showNextImage, 5000); // Change the interval for desired speed
+          </script>
+      </header>
+<main>
+
+  <section>
+    <h2><a href="NewArrivals.html"> New Arrivals</a></h2>
+            <section class="products">
+                <div>
+                    <button class="prev1"><i class="fa-solid fa-chevron-left"></i></box-icon></button>
+                    <button class="next1"><i class="fa-solid fa-chevron-right"></i></button>
+               
+                </div>
+    
+                <div class="product-card">
+                    <img src="product-image10.avif" alt="Product 1">
+                    <p>Crystal Photo Paper Clip - Space Series</p>
+                    <p>Rs 495</p>
+                    <button><i class="fa-brands fa-opencart"></i><p>Add to Cart</p></button>
+                            </div>
+                <div class="product-card">
+                    <img src="product-image11.avif" alt="Product 2">
+                    <p>Mini Astronaut Paper Cutter</p>
+                    <p>Rs 175</p>
+                    <button><i class="fa-brands fa-opencart"></i><p>Add to Cart</p></button>
+                            </div>
+                <div class="product-card">
+                    <img src="product-image12.avif" alt="Product 3">
+                    <p>Translucent Pencil Box</p>
+                    <p>Rs 295</p>
+                    <button><i class="fa-brands fa-opencart"></i><p>Add to Cart</p></button>
+                </div>
+                </section>
+    
+    <h2><a href="Journals.html">Journals/Notebooks</a></h2>
+            <section class="products">
+                <div>
+                    <button class="prev1"><i class="fa-solid fa-chevron-left"></i></box-icon></button>
+                    <button class="next1"><i class="fa-solid fa-chevron-right"></i></button>
+               
+                </div>
+    
+                <div class="product-card">
+                    <img src="product-image7.webp" alt="Product 1">
+                    <p>Kuromi Spiral A5 Notebook</p>
+                    <p>Rs 950</p>
+                    <button><i class="fa-brands fa-opencart"></i><p>Add to Cart</p></button>
+                            </div>
+                <div class="product-card">
+                    <img src="product-image8.webp" alt="Product 2">
+                    <p>Gradient Colors Loose Leaf Lined Notebook B5</p>
+                    <p>Rs 675</p>
+                    <button><i class="fa-brands fa-opencart"></i><p>Add to Cart</p></button>
+                            </div>
+                <div class="product-card">
+                    <img src="product-image9.jpg" alt="Product 3">
+                    <p>Starry Playground A5 Lined Notebook</p>
+                    <p>Rs 995</p>
+                    <button><i class="fa-brands fa-opencart"></i><p>Add to Cart</p></button>
+                </div>
+                </section>
+                <h2><a href="Highlighters.html">Highlighters</a></h2>
+            <section class="products">
+                <div>
+                    <button class="prev1"><i class="fa-solid fa-chevron-left"></i></box-icon></button>
+                    <button class="next1"><i class="fa-solid fa-chevron-right"></i></button>
+               
+                </div>
+    
+                <div class="product-card">
+                    <img src="product-image13.webp" alt="Product 1">
+                    <p>Double Head Deli Colorful Body Brush Highlighter</p>
+                    <p>Rs 1,450</p>
+                    <button><i class="fa-brands fa-opencart"></i><p>Add to Cart</p></button>
+                            </div>
+                <div class="product-card">
+                    <img src="product-image14.webp" alt="Product 2">
+                    <p>Wen Duo Double Head Florescent Highlighter - Set of 5</p>
+                    <p>Rs 650</p>
+                    <button><i class="fa-brands fa-opencart"></i><p>Add to Cart</p></button>
+                            </div>
+                <div class="product-card">
+                    <img src="product-image15.webp" alt="Product 3">
+                    <p>WEN DUO Double Head Round Body Acrylic Marker</p>
+                    <p>Rs 1,850</p>
+                    <button><i class="fa-brands fa-opencart"></i><p>Add to Cart</p></button>
+                </div>
+                </section>
+    
+    <h2><a href="AntiqueStationary.html">Antique Stationary</a></h2>
+        <section class="products">
+            <div>
+                <button class="prev1"><i class="fa-solid fa-chevron-left"></i></box-icon></button>
+                <button class="next1"><i class="fa-solid fa-chevron-right"></i></button>
+           
+            </div>
+
+            <div class="product-card">
+                <img src="product-image1.jpg" alt="Product 1">
+                <p>Calligraphy Reed Pen Qalam Kalam Pen Arabic</p>
+                <p>Rs 750</p>
+                <button><i class="fa-brands fa-opencart"></i><p>Add to Cart</p></button>
+                        </div>
+            <div class="product-card">
+                <img src="product-image2.jpg" alt="Product 2">
+                <p>Dawat Ink Pot</p>
+                <p>Rs 250</p>
+                <button><i class="fa-brands fa-opencart"></i><p>Add to Cart</p></button>
+                        </div>
+            <div class="product-card">
+                <img src="product-image3.jpg" alt="Product 3">
+                <p>48 Pack Antique Stationary Paper</p>
+                <p>Rs 3000</p>
+                <button><i class="fa-brands fa-opencart"></i><p>Add to Cart</p></button>
+            </div>
+            </section>
+            
+            <h2><a href="Stickers.html">Stickers </a></h2>
+            <section class="products">
+                <div>
+                    <button class="prev1"><i class="fa-solid fa-chevron-left"></i></box-icon></button>
+                    <button class="next1"><i class="fa-solid fa-chevron-right"></i></button>
+               
+                </div>
+    
+                <div class="product-card">
+                    <img src="product-image16.webp" alt="Product 1">
+                    <p>Roses Climbing Fence Strickers Box</p>
+                    <p>Rs 450</p>
+                    <button><i class="fa-brands fa-opencart"></i><p>Add to Cart</p></button>
+                            </div>
+                <div class="product-card">
+                    <img src="product-image17.webp" alt="Product 2">
+                    <p>Flat Panda PVC Sticker Sheet</p>
+                    <p>Rs 250</p>
+                    <button><i class="fa-brands fa-opencart"></i><p>Add to Cart</p></button>
+                            </div>
+                <div class="product-card">
+                    <img src="product-image18.webp" alt="Product 3">
+                    <p>Kitten Selfie Stickers Box</p>
+                    <p>Rs 450</p>
+                    <button><i class="fa-brands fa-opencart"></i><p>Add to Cart</p></button>
+                </div>
+                </section>
+    
+        <script>
+            const productContainers=[...document.querySelectorAll('.products')];
+            const next=[...document.querySelectorAll('.next1')];
+            const prev=[...document.querySelectorAll('.prev1')];
+            productContainers.forEach((item, i) => {
+             let containerDimensions=item.getBoundingClientRect();
+             let containerWidth=containerDimensions.width;
+             next[i].addEventListener('click',() => {
+                 item.scrollLeft+=containerWidth;
+             })
+             prev[i].addEventListener('click',() => {
+                 item.scrollLeft-=containerWidth;
+             })
+
+            })
+            productContainers.forEach(section => {
+        const prev = section.querySelector('.prev1');
+        const next = section.querySelector('.next1');
+        
+        section.addEventListener('scroll', () => {
+            const scrollLeft = section.scrollLeft;
+            prev.style.left = `${scrollLeft}px`;
+            next.style.right = `${-scrollLeft}px`;
+        });
+    });
+ 
+         </script>
+  </section>
+
+
+    <div class="sub">
+        Subscribe لکھاری ::
+        <form class="subscribe-form">
+            <input type="email" name="email" placeholder="Enter your email address">
+            <input type="submit" value="Join لکھاری ">
+          </form>
+    </div>
+    <div class="info">
+        <div class="in">
+            <h3>Quick Links</h3>
+                <span class="ho"><a href="#">Search</a></span>
+            </br>
+            <span class="ho"><a href="AboutUs.html">About Us</a></span>
+        </br>
+            <span class="ho"><a href="PrivacyPolicy.html">Privacy Policy</a></span>
+        </br>
+            <span class="ho"><a href="FAQ.html">FAQ's</a></span>
+            </div>
+        <div class="in">
+            <h3>Contact Us</h3>
+            <span class="ho"><a href="#">National University of Modern Languages Islamabad</a></span>
+        </br>
+            <span class="ho"><a href="#">BSCS</a></span>
+        </br>
+            <span class="ho"><a href="#">4th semester</a></span>
+        </br>
+            <span class="ho"><a href="#">Digital Marketing</a></span>
+        </div>
+    </div>
+</main>
+      <footer style="margin: 10px; color:#8266d4">
+        <span style="align-items: start; padding: 20px;">© BSCS 4A 2024. All Rights Reserved</span>
+
+      </footer>
+</body>
+</html>
