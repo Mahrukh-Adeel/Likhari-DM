@@ -109,7 +109,8 @@ body {
     object-fit: contain; 
     position: absolute;
     opacity: 0; 
-    transition: opacity 0.5s ease-in-out; 
+    transition: opacity 0.5s ease-in-out;
+
   }
   
   .image-scroller img.active {
@@ -118,10 +119,12 @@ body {
   
   @keyframes slide-show {
     0% { transform: translateX(0); }
-    33% { transform: translateX(-100%); } 
-    66% { transform: translateX(-200%); }
-    100% { transform: translateX(-300%); } 
+    25% { transform: translateX(-100%); } 
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(-400%); }
   }
+  
   
   .prev, .next {
     cursor: pointer;
